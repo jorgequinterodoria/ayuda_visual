@@ -1,0 +1,1298 @@
+/****************************************************************************************
+* Project		    :	NBU-WEBP-005 Infografia Novartis
+* License		    :	Uso exclusivo de Novartis, Alfa AM - Neurobusiness
+* Copyright (c) :	2020 Alfa AM - Neurobusiness
+* Author - Year	:	Alfa AM-Neurobusiness, Eric Gonzalez, Camilo Blanco.	-	Mayo-2020
+* Mail - Web	  :	
+* Description	  :	CSS general template for the Infografy
+
+****************************************************************************************/
+/*body CSS class with max width fixed*/
+body {
+  background: #1a181d;
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/*App container 16:9 Aspect Ratio */
+.appContainer{
+  display: grid;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background-size: 100% 100%
+}
+
+/*CSS Grid System from https://mozilladevelopers.github.io/playground/css-grid*/
+.grid-container {
+  display: grid; /*CSS grid declaration*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; height: 100%;
+  grid-template-columns: repeat(4,1fr) 18% ;
+  /* See parameters/BackGround analysis.xlsx for calculations*/
+  grid-template-rows: 54% 14% 24% 1fr;
+  font-family: 'Comfortaa', cursive;
+}
+
+/*CSS Grid System first slide*/
+.grid-container02 {
+  display: grid; /*CSS grid declaration*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; height: 100%;
+  grid-template-columns: repeat(4,1fr) 18% ;
+  /* See parameters/BackGround analysis.xlsx for calculations*/
+  grid-template-rows: 91% 9%;
+  font-family: 'Comfortaa', cursive;
+}
+
+/*Test item to display stored answers*/
+.itemAnswers {
+  grid-column: 5 / span 1;  
+  grid-row: 1 / span 1 ; 
+  position: absolute;
+  color:#30445C; /*Text Color*/  
+  padding-top: 3%;
+  align-content: center;
+  visibility : hidden;
+}
+
+
+/*Grid item Questions CSS from https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/*/
+.itemQuestions {
+  grid-column: 2 / span 2;  
+  grid-row: 3 / span 1 ; 
+  position: absolute; 
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.fontColor {
+  color: #FFA101;
+}
+
+
+
+
+/*Grid item Stop CSS*/
+.itemStop {
+  grid-column: 4 / span 1;  
+  grid-row: 1 / span 1; 
+  position: relative;
+}
+
+.texto{  
+  position: absolute;
+  bottom: 25%;  
+  right: -80%;
+  max-height: 50%;  
+}
+
+.Btntratamiento{  
+  position: absolute;
+  bottom: -20%;  
+  right: -35%;
+  max-height: 30%; 
+  cursor: pointer; 
+}
+
+.Btnevolucion{  
+  position: absolute;
+  bottom: -50%;  
+  right: -35%;
+  max-height: 30%;  
+  cursor: pointer;
+}
+
+.letrerotratamiento{  
+  position: absolute;
+  bottom: -21%;  
+  right: 10%;
+  max-height: 95%;  
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.letreroevolucion{  
+  position: absolute;
+  bottom: -21%;  
+  right: 10%;
+  max-height: 95%;  
+  cursor: pointer;
+  visibility: hidden;
+}
+
+/*Grid item popup CSS*/
+.itemPop {
+  grid-column: 3 / span 1;  
+  grid-row: 1 / span 1; 
+  position: relative;
+}
+
+.pop{  
+  position: absolute;
+  bottom: -60%;  right: -105%;
+  max-height: 95%;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+/*Forward arrow*/
+.itemArrow{
+  grid-column: 5 / span 1;  
+  grid-row: 1 / span 1; 
+  position: relative;
+}
+.forwardArrow{
+  position: absolute;
+  bottom: -10%; left: 40%;
+  max-height: 15%;
+  cursor: pointer;
+}
+
+/*LogoNovartis*/
+.itemLogoNovartis {
+  grid-column: 5 / span 1;  
+  grid-row: 4 / span 1; 
+  position: relative;
+}
+
+.logoNovartis{  
+  position: absolute;
+  max-height: 81%;
+  padding-left: 0%;
+}
+
+/*LogoNovartis first slide*/
+.itemLogoNovartis02 {
+  grid-column:3 / span 4;  
+  grid-row: 1 / span 3; 
+  position: relative;
+}
+
+.logoNovartis02{  
+  position: absolute;
+  max-height: 81%;
+  padding-left: 0%;
+  padding-top: 3%;
+}
+
+/*legalClaimitem*/
+.itemLegalClaim {
+  grid-column: 3 / span 2;  
+  grid-row: 4 / span 1 ; 
+  position: absolute;
+  font-size:min(1.2vw, 13px);
+  color:#30445C; /*Text Color*/  
+  padding-top: 4%;  
+}
+
+/*legalClaimitem first slide*/
+.itemLegalClaim02 {
+  grid-column: 3 / span 2;  
+  grid-row: 2 / span 1 ; 
+  position: absolute;
+  font-size:min(1.2vw, 13px);
+  color:#30445C; /*Text Color*/  
+  padding-top: 5%;  
+}
+
+/*Animation elements*/
+
+/*Cloud animation*/
+.itemCloud01 {
+  grid-column: 2 / span 1;  
+  grid-row: 1 / span 1; 
+  position: relative;
+}
+
+.itemCloud02 {
+  grid-column: 3 / span 1;  
+  grid-row: 1 / span 1; 
+  position: relative;
+}
+.itemCloud03 {
+  grid-column: 4 / span 1;  
+  grid-row: 1 / span 1; 
+  position: relative;
+  bottom: 1%; left: 25%;
+}
+
+.cloud{  
+  position: absolute;
+  animation: cloudMove 5s;
+  max-height: 58%;
+  animation-fill-mode: forwards;
+}
+
+
+/*Car animation, from https://www.youtube.com/watch?v=f1WMjDx4snI */
+.itemCarPos01 {
+  grid-column: 1 / span 1;  
+  grid-row: 2 / span 1; 
+  position: relative;
+}
+.itemCarPos02 {
+  grid-column: 2 / span 1;  
+  grid-row: 2 / span 1; 
+  position: relative;
+}
+.itemCarPos03 {
+  grid-column: 3 / span 1;  
+  grid-row: 2 / span 1; 
+  position: relative;
+}
+.itemCarPos04 {
+  grid-column: 4 / span 1;  
+  grid-row: 2 / span 1; 
+  position: relative;
+}
+
+.car {
+  position: absolute;
+  max-height: 168%;
+  animation: carMove 5s;
+  animation-fill-mode: forwards;   
+}
+
+
+/* Car position in result slide*/
+.itemCarResult {
+  grid-column: 2 / span 1;  
+  grid-row: 3 / span 1; 
+  position: relative;
+}
+
+.carResult{
+  position: absolute;
+  max-height: 99%;
+  bottom: 65%; left: 95%;
+}
+
+/*Advice sign animation*/
+.itemAdvice01 {
+  grid-column: 2 / span 1;  
+  grid-row: 1 / span 1; 
+  position: relative;
+  left: 50%;
+}
+
+.advice01{  
+  position: absolute;
+  max-height: 64%;
+  animation: adviceMove01 3s;
+  animation-fill-mode: forwards;
+}
+
+
+.itemAdvice02 {
+  grid-column: 3 / span 1;  
+  grid-row: 1 / span 1; 
+  position: relative;
+  left: -60%; bottom: 10%;
+}
+
+.advice02{  
+  position: absolute;
+  max-height: 110%;
+  animation: adviceMove02 3s;
+  animation-fill-mode: forwards;
+}
+
+  /*Start button*/
+  .itemStart {
+    grid-column:4 / span 4;  
+    grid-row: 1 / span 1; 
+    position: relative;
+ }
+
+  .btn001{
+    position: absolute;
+    cursor:pointer;
+    background-color: transparent;
+    border: none; /*comment to see border on the screen*/
+    border-radius: 50vw; /*Rounded corner*/
+    left: 31%;
+    top: 68.5%;
+    width: 20%;
+    height:15.5%;    
+  }
+  
+  
+  .start{  
+    position: absolute;
+    max-height: 40%;
+    padding-left: 13%;
+    padding-top: 75%;
+  }
+
+
+/*last slide*/
+  .itemLast {
+    grid-column: 1 / span 4;  
+    grid-row: 1 / span 1 ; 
+    position: absolute; 
+    padding-top: 25%;
+    padding-left: 30%;
+    color: white;
+    font-size:min(1.2vw, 15px);
+    line-height: 154%;
+    text-align: center;
+  }
+
+
+/*q2*/
+
+.q2001{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -50%;
+  top: 61%;
+  width:43.5%;
+  height: 12%;
+}
+
+.q2002{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -51%;
+  top: 80%;
+  width:43.5%;
+  height: 12%;
+}
+
+.imgq2_001{  
+  position: absolute;
+  bottom: 18%;  
+  right: 5%;
+  max-height: 38%;  
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.imgq2_002{  
+  position: absolute;
+  bottom: -15%;  
+  right: 18%;
+  max-height: 100%;  
+  cursor: pointer;
+  visibility: hidden;
+}
+  /*q2*/
+
+
+
+  /*q3*/  
+  
+
+.q301{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -48%;
+  top: 20%;
+  width:30.5%;
+  height: 9%;
+}
+
+.q302{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -48%;
+  top: 34%;
+  width:30.5%;
+  height: 9%;
+}
+
+.q303{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -48%;
+  top: 47%;
+  width:30.5%;
+  height: 9%;
+}
+
+.q304{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -48%;
+  top: 60%;
+  width:30.5%;
+  height: 9%;
+}
+
+.q305{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -48%;
+  top: 74%;
+  width:30.5%;
+  height: 9%;
+}
+
+.q306{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -48%;
+  top: 87%;
+  width:30.5%;
+  height: 9%;
+}
+
+.cir001ama{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left: 10%;
+  top: 25%;
+  max-width: 74%;
+}
+
+
+
+.cir001roj{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left: 9%;
+  top: 30%;
+  max-width: 57%;
+}
+
+  
+.niega{
+  position: absolute;
+  left:35.5%;
+  top: 48%;
+  max-width: 20%;
+  visibility: hidden;
+}
+
+.niega02{
+  position: absolute;
+  left:30.5%;
+  top: 48%;
+  max-width: 20%;
+  visibility: hidden;
+}
+
+
+.metoclo{
+  position: absolute;
+  left:35.5%;
+  top: 48%;
+  max-width: 20%;
+  visibility: hidden;
+}
+
+.metoclo02{
+  position: absolute;
+  left:28.9%;
+  top: 35%;
+  max-width: 20%;
+  visibility: hidden;
+  opacity:75%;
+}
+
+.plani{
+  position: absolute;
+  left:34%;
+  top: 48%;
+  max-width: 20%;
+  visibility: hidden;
+}
+
+.hipo{
+  position: absolute;
+  left:34%;
+  top: 48%;
+  max-width: 20%;
+  visibility: hidden;
+}
+
+.consumo{
+  position: absolute;
+  left:34%;
+  top: 41%;
+  max-width: 20%;
+  visibility: hidden;
+}
+
+
+.letazul{
+  position: absolute;
+  left:43%;
+  top: 50%;
+  max-width: 17%;
+  visibility: hidden;
+}
+
+.letrojo{
+  position: absolute;
+  left:34%;
+  top: 18%;
+  height: 67%;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+/*q4*/
+
+.q4001{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: 39%;
+  top: 54%;
+  width:25.5%;
+  height: 12%;
+}
+
+.q4002{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: 39%;
+  top: 70%;
+  width:25.5%;
+  height: 12%;
+}
+
+.q404{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -52%;
+  top: 63%;
+  width:30.5%;
+  height: 9%;
+}
+
+.q405{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -52%;
+  top: 79%;
+  width:30.5%;
+  height: 9%;
+}
+
+
+
+
+/*q4*/
+/*q5*/
+
+.q501{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -35%;
+  top: 50%;
+  width:32.5%;
+  height: 10%;
+}
+
+.q502{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -35%;
+  top: 65%;
+  width:32.5%;
+  height: 10%;
+}
+
+.q503{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -35%;
+  top: 80%;
+  width:32.5%;
+  height: 10%;
+}
+
+.niegaQ5{
+  position: absolute;
+  cursor: pointer;
+  left:5.5%;
+  top: 5%;
+  max-width: 47%;
+  visibility: hidden;
+}
+
+.metoQ5{
+  position: absolute;
+  cursor: pointer;
+  left:5.5%;
+  top: 5%;
+  max-width: 47%;
+  visibility: hidden;
+}
+
+.planiQ5{
+  position: absolute;
+  cursor: pointer;
+  left:5.5%;
+  top: 5%;
+  max-width: 47%;
+  visibility: hidden;
+}
+
+
+.btnadelQ5{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 50vw; /*Rounded corner*/
+  left: 79%;
+  top: 8.5%;
+  width: 16%;
+  height: 20.5%;    
+}
+
+
+
+/*q6*/
+.q601{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: 37%;
+  top: 58%;
+  width:10.5%;
+  height: 12%;
+}
+
+.q602{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: 65%;
+  top: 58%;
+  width:10.5%;
+  height: 12%;
+}
+
+.niegaQ6{
+  position: absolute;
+  cursor: pointer;
+  left:45.5%;
+  top: 45%;
+  max-width: 47%;
+  visibility: hidden;
+}
+
+
+/*q7*/
+
+.q7001{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: -28%;
+  top: 52%;
+  width:23.5%;
+  height: 12%;
+}
+
+.q7002{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: 65%;
+  top: 48%;
+  width:13.5%;
+  height: 12%;
+}
+
+.imgq7_001{  
+  position: absolute;
+  bottom: 25%;  
+  right: 5%;
+  max-height: 36%;  
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.imgq7_002{  
+  position: absolute;
+  bottom: 5%;  
+  right: 45%;
+  max-height: 65%;  
+  cursor: pointer;
+  visibility: hidden;
+}
+
+
+
+/*q8*/
+
+.imgq8_001{  
+  position: absolute;
+  bottom: 5%;  
+  right: 10%;
+  max-height: 95%;  
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.imgq8_002{  
+  position: absolute;
+  bottom: 5%;  
+  right: 10%;
+  max-height: 95%;  
+  cursor: pointer;
+  visibility: hidden;
+}
+
+
+.q801{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: 37%;
+  top: 58%;
+  width:50.5%;
+  height: 12%;
+}
+
+.q802{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 2.5vw; /*Rounded corner*/
+  left: 37%;
+  top:75%;
+  width:50.5%;
+  height: 12%;
+}
+
+
+/*q8*/
+
+/*q9*/
+
+.btnq9_01{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left:-2%;
+  top: 45%;
+  max-width: 35%;
+}
+
+.q9_letrero{  
+  position: absolute;
+  bottom: 25.5%;  
+  right: 6%;
+  cursor: pointer;
+  max-width: 85%;
+  visibility: hidden;
+}
+
+.imgq_001{  
+  position: absolute;
+  bottom: 18%;  
+  right: 5%;
+  max-height: 38%;  
+  cursor: pointer;
+  visibility: hidden;
+}
+
+/*q9*/
+
+/*q10*/
+
+.btnq10_01{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left:8%;
+  top: 46.5%;
+  max-width: 12.6%;
+}
+
+.btnq10_02{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left:-5%;
+  top: 60.5%;
+  max-width: 12.6%;
+}
+
+.q10_xroja{  
+  position: absolute;
+  bottom: 44%;  
+  right: 1.3%;
+  cursor: pointer;
+  max-width: 52%;
+  visibility: hidden;
+}
+
+
+.q10_letrero{  
+  position: absolute;
+  bottom: 24.5%;  
+  right: 0.9%;
+  cursor: pointer;
+  max-width: 52.3%;
+  visibility: hidden;
+}
+
+/*q10*/
+
+/*q12*/
+
+.btnq12_01{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left:25%;
+  top: 48%;
+  max-width: 30.6%;
+}
+
+.btnq12_02{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left:22%;
+  top: 48%;
+  max-width: 30.6%;
+}
+
+.q12_letrero{  
+  position: absolute;
+  bottom: 15.8%;  
+  cursor: pointer;
+  max-width: 100%;
+  visibility: hidden;
+}
+
+.q12_letrero02{  
+  position: absolute;
+  bottom: 15.8%;  
+  cursor: pointer;
+  max-width: 100%;
+  visibility: hidden;
+}
+
+/*q12*/
+
+/*q13*/
+
+.btnq13_01{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left:-50%;
+  top: 48%;
+  max-width: 17%;
+}
+
+.btnq13_02{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left:-68%;
+  top: 69%;
+  max-width: 17%;
+}
+
+.q13_letrero{  
+  position: absolute;
+  bottom: 12.8%; 
+  right: 10%; 
+  cursor: pointer;
+  max-width: 83%;
+  visibility: hidden;
+}
+
+.q13_letrero02{  
+  position: absolute;
+  bottom: 13.3%; 
+  right: 10%; 
+  cursor: pointer;
+  max-width: 80%;
+  visibility: hidden;
+}
+
+/*q13*/
+.btnq14_01{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left:-28%;
+  top: 35%;
+  max-width:38%;
+}
+
+
+.btnq14_02{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left:-14%;
+  top: 35%;
+  max-width: 38%;
+}
+
+/*q14*/
+/*q15*/
+
+.btnq15_01{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left:0.8%;
+  top: 50.2%;
+  max-width:20%;
+}
+
+
+.btnq15_02{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left:-20%;
+  top: 74%;
+  max-width:20%;
+}
+
+.q15_letrero{  
+  position: absolute;
+  right: 2%;
+  bottom: 15.5%;  
+  cursor: pointer; 
+  visibility: hidden;
+  max-width:55%;
+}
+
+.q15_letrero02{  
+  position: absolute;
+  right: 2%;
+  bottom: 13.5%;  
+  cursor: pointer;
+  visibility: hidden;
+  max-width:55%;
+}
+
+/*q15*/
+/*q16*/
+
+.btnq16_01{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  right:-360.8%;
+  top:10.2%;
+  max-width:75%;
+}
+
+.q16_letrero{  
+  position: absolute;
+  right: 2%;
+  bottom: 24%;  
+  cursor: pointer; 
+  visibility: hidden;
+  max-width:89%;
+}
+
+/*q16*/
+/*q17*/
+
+.btnq17_01{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left:-5%;
+  top: 57%;
+  max-width: 15%;
+}
+
+.btnq17_02{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left: -6%;
+  top: 57%;
+  max-width: 15%;
+}
+
+.btnq17_03{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left: -7%;
+  top: 57%;
+  max-width: 15%;
+}
+
+.btnq17_04{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left: -8%;
+  top: 57%;
+  max-width: 15%;
+}
+
+.btnq17_05{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left: -8%;
+  top: 57.1%;
+  max-width: 15%;
+}
+
+.btnq17_06{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left: -8%;
+  top: 57%;
+  max-width: 15%;
+}
+
+.btnq17_07{
+  position: relative;
+  cursor:pointer;
+  background-color: transparent;
+  /*border: none; /*comment to see border on the screen*/
+  border-radius: 1.5vw; /*Rounded corner*/
+  left: 85%;
+  top: 39%;
+  max-width: 15.5%;
+}
+
+
+.q17_01{  
+  position: absolute;
+  cursor: pointer;
+  right: 0.4%;
+  bottom: 33.7%;  
+  max-width:60%;
+  visibility: hidden;  
+}
+
+
+.q17_02{
+  position: absolute;
+  cursor: pointer;
+  right: 1.9%;
+  bottom: 33.7%;  
+  max-width:54.4%;
+  visibility: hidden;
+}
+
+.q17_03{
+  position: absolute;
+  cursor: pointer;
+  right: 3.1%;
+  bottom: 33.7%;  
+  max-width:54.4%;
+  visibility: hidden;
+}
+
+.q17_04{
+  position: absolute;
+  cursor: pointer;
+  right: 4.2%;
+  bottom: 33.7%;  
+  max-width:54.4%;
+  visibility: hidden;
+}
+
+.q17_05{
+  position: absolute;
+  cursor: pointer;
+  right: 4.8%;
+  bottom: 33.7%;  
+  max-width:54.4%;
+  visibility: hidden;
+}
+
+.q17_06{
+  position: absolute;
+  cursor: pointer;
+  right: 5.5%;
+  bottom: 33.7%;  
+  max-width:54.4%;
+  visibility: hidden;
+}
+
+.q17_07{
+  position: absolute;
+  cursor: pointer;
+  right: 1.2%;
+  bottom: 33.7%;  
+  max-width:60.4%;
+  visibility: hidden;
+}
+.q17_08{
+  position: absolute;
+  cursor: pointer;
+  right: 0.5%;
+  bottom: 0%;  
+  max-width:99.4%;
+  visibility: hidden;
+}
+
+.ref{
+  position: absolute;
+  cursor: pointer;
+  right: 20%;
+  bottom: -3.7%;  
+  max-width:60.4%; 
+}
+
+
+
+
+.itemArrowback{
+  grid-column: 5 / span 1;  
+  grid-row: 1 / span 1; 
+  position: relative;
+}
+  
+.adelante{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 50vw; /*Rounded corner*/
+  max-height: 23%;
+  left: 55%;
+  top: 160%;   
+}
+
+
+
+.btnatras{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 50vw; /*Rounded corner*/
+  left: .1%;
+  top:84.5%;
+  width: 9%;
+  height: 11.5%;    
+}
+
+.btnadel{
+  position: absolute;
+  cursor:pointer;
+  background-color: transparent;
+  border: none; /*comment to see border on the screen*/
+  border-radius: 50vw; /*Rounded corner*/
+  left: 53.5%;
+  top: 160.5%;
+  width: 45%;
+  height: 19.5%;    
+}
+
+
+
+
+
