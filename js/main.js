@@ -23,90 +23,9 @@
   
 }
 
-//Hide the popup01
-function hide() {
-  const x = document.getElementById("niegaJS");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-  } else {
-    x.style.visibility = "hidden";
-  }
-}
-
-//Hide the popup01
-function hide01() {
-  const x = document.getElementById("metocloJS");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-  } else {
-    x.style.visibility = "hidden";
-  }
-}
-
-//Hide the popup01
-function hide02() {
-  const x = document.getElementById("niega02JS");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-  } else {
-    x.style.visibility = "hidden";
-  }
-}
-
-//Hide the popup01
-function hide03() {
-  const x = document.getElementById("planiJS");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-  } else {
-    x.style.visibility = "hidden";
-  }
-}
-
-//Hide the popup01
-function hide04() {
-  const x = document.getElementById("hipoJS");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-  } else {
-    x.style.visibility = "hidden";
-  }
-}
-
-//Hide the popup01
-function hide05() {
-  const x = document.getElementById("consumoJS");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-  } else {
-    x.style.visibility = "hidden";
-  }
-}
-
-//Hide the popup01
-function hide06() {
-  const x = document.getElementById("q2_2");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-  } else {
-    x.style.visibility = "hidden";
-  }
-}
-
-
-//Hide the popup01
-function hide08() {
-  const x = document.getElementById("q2_1");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-  } else {
-    x.style.visibility = "hidden";
-  }
-}
-
-//Hide the popup01
-function hide08b() {
-  const x = document.getElementById("q2_2");
+//Hide the popup
+function hideP(popup) {
+  const x = document.getElementById(popup);
   if (x.style.visibility === "visible") {
     x.style.visibility = "hidden";
   } else {
